@@ -1,5 +1,5 @@
 import { Scene } from 'phaser'
-import background from '../../assets/sky.png'
+import background from '../assets/sky.png'
 
 
 export default class BootScene extends Scene {
