@@ -6,8 +6,8 @@
 export default {
   name: 'game',
   mounted() {
-    import(/* webpackChunkName: "game" */ '../game/Game').then(game => {
-      new game.Game()
+    import(/* webpackChunkName: "game" */ '../game/game').then(game => {
+      game.launch()
     })
   }
 }
