@@ -1,5 +1,5 @@
 import { Scene } from 'phaser'
-import background from '../assets/sky.png'
+import sky from '../assets/sky.png'
 import bomb from '../assets/bomb.png'
 
 
@@ -9,7 +9,7 @@ export default class BootScene extends Scene {
   }
 
   preload () {
-    this.load.image('sky', background)
+    this.load.image('sky', sky)
     this.load.image('bomb', bomb)
   }
 
