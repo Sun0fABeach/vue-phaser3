@@ -11,7 +11,7 @@
     "serve": "serve -p 5000 dist"
   },
   "dependencies": {
-    "phaser": "^3.3.0",
+    "phaser": "^3.6.0",
     "vue": "^2.5.11"
   },
   "browserslist": [
@@ -30,10 +30,10 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
-    "serve": "^6.5.4",
+    "serve": "^6.5.6",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
