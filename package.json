@@ -11,7 +11,7 @@
     "serve": "serve -p 5000 dist"
   },
   "dependencies": {
-    "phaser": "^3.6.0",
+    "phaser": "^3.10.1",
     "vue": "^2.5.11"
   },
   "browserslist": [
@@ -20,23 +20,24 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.0.5",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
-    "serve": "^6.5.6",
-    "vue-loader": "^13.0.5",
+    "serve": "^6.5.8",
+    "vue-loader": "^15.2.4",
     "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
