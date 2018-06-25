@@ -36,6 +36,7 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.0.3",
     "serve": "^9.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.6",
     "vue-loader": "^15.2.4",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^4.12.1",
