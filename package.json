@@ -1,7 +1,7 @@
 {
   "name": "vue-phaser3",
   "description": "Template for working with Phaser 3 in a Vue project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "license": "MIT",
   "private": true,
