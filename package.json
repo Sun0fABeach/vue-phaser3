@@ -1,6 +1,7 @@
 {
   "name": "vue-phaser3",
   "description": "Template for working with Phaser 3 in a Vue project",
+  "keywords": ["vue", "phaser", "boilerplate"],
   "version": "1.0.1",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "license": "MIT",
