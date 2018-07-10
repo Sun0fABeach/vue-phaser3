@@ -7,7 +7,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -92,6 +91,7 @@ module.exports = {
 }
 
 if (process.env.NODE_ENV === 'development') {
+  module.exports.mode = 'development'
   module.exports.devtool = '#eval-source-map'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new BrowserSyncPlugin({
