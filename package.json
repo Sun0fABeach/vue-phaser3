@@ -8,6 +8,10 @@
   ],
   "version": "1.0.2",
   "author": "Markus Appel <markospoparkos@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sun0fABeach/vue-phaser3.git"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --watch",
