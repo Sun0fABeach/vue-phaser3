@@ -1,6 +1,6 @@
 # vue-phaser3
 
-> Template for working with Phaser 3 in a Vue project, based on [webpack-simple](https://github.com/vuejs-templates/webpack-simple).
+> Webpack template for working with Phaser 3 in a Vue project
 
 ## Build Setup
 
