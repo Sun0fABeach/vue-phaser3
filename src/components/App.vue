@@ -14,11 +14,8 @@ export default {
 
 
 <style lang="css">
-html, body {
-  height: 100%;
-}
-
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
