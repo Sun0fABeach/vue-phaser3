@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import launch from '../game/game'
+import launch from 'Game/game'
 
 export default {
   name: 'game',

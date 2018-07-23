@@ -1,6 +1,6 @@
 import { Scene } from 'phaser'
-import sky from '../assets/sky.png'
-import bomb from '../assets/bomb.png'
+import sky from 'Game/assets/sky.png'
+import bomb from 'Game/assets/bomb.png'
 
 
 export default class BootScene extends Scene {
