@@ -3,15 +3,12 @@
 </template>
 
 <script>
+import launch from '../game/game'
+
 export default {
   name: 'game',
   mounted() {
-    import(/* webpackChunkName: "game" */ '../game/game').then(game => {
-      game.launch()
-    })
+    launch()
   }
 }
 </script>
-
-<style lang="css" scoped>
-</style>

@@ -1,14 +1,14 @@
 <template>
-  <Game/>
+  <GameDownloader />
 </template>
 
 
 <script>
-import Game from './Game'
+import GameDownloader from './GameDownloader'
 
 export default {
   name: 'app',
-  components: { Game }
+  components: { GameDownloader }
 }
 </script>
 
