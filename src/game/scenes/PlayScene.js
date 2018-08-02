@@ -11,8 +11,14 @@ export default class PlayScene extends Scene {
 
     const bomb = this.physics.add.sprite(400, 200, 'bomb')
     bomb.setCollideWorldBounds(true)
+    bomb.body.onWorldBounds = true // enable worldbounds collision event
     bomb.setBounce(1)
     bomb.setVelocity(200, 20)
+
+    this.sound.add('thud')
+    this.physics.world.on('worldbounds', () => {
+      this.sound.play('thud', { volume: 0.75 })
+    })
   }
 
   update () {
