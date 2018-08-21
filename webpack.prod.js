@@ -1,4 +1,5 @@
 const common = require('./webpack.common.js')
+const path = require('path')
 const merge = require('webpack-merge')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
@@ -13,10 +14,7 @@ module.exports = merge(common, {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: file => (
-          /node_modules/.test(file) &&
-          !/\.vue\.js/.test(file)
-        )
+        include: path.resolve(__dirname, 'src')
       }
     ]
   },
