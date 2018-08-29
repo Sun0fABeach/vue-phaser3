@@ -1,7 +1,8 @@
 {
   "presets": [
-    ["env", { "modules": false }],
-    "stage-3"
+    ["@babel/preset-env", { "modules": false }]
   ],
-  "plugins": ["syntax-dynamic-import"]
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import"
+  ]
 }
