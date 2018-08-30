@@ -8,6 +8,18 @@ module.exports = merge(common, {
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif|svg|mp3|ogg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets'
+        }
+      }
+    ]
+  },
   plugins: [
     new BrowserSyncPlugin({
       host: process.env.IP || 'localhost',

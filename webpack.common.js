@@ -43,14 +43,6 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
-        test: /\.(png|jpg|gif|svg|mp3|ogg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]',
-          outputPath: 'assets'
-        }
-      },
-      {
         test: [ /\.vert$/, /\.frag$/ ],
         use: 'raw-loader'
       }

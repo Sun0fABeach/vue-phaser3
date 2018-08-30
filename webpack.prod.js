@@ -12,6 +12,14 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif|svg|mp3|ogg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]',
+          outputPath: 'assets'
+        }
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: path.resolve(__dirname, 'src')
