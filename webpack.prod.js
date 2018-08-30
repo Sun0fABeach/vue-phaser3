@@ -6,8 +6,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: '[name].js?[chunkhash]',
-    chunkFilename: '[name].js?[chunkhash]'
+    filename: '[name].bundle.js?[chunkhash]',
+    chunkFilename: '[name].bundle.js?[chunkhash]'
   },
   module: {
     rules: [
