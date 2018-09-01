@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --watch --config webpack.dev.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.prod.js",
     "serve": "serve -p 5000 dist"
   },
@@ -32,8 +32,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.0",
-    "browser-sync": "^2.24.7",
-    "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
@@ -50,6 +48,7 @@
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7",
     "webpack-merge": "^4.1.4"
   }
 }

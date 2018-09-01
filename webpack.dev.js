@@ -1,6 +1,6 @@
 const common = require('./webpack.common.js')
 const merge = require('webpack-merge')
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const path = require('path')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -20,15 +20,9 @@ module.exports = merge(common, {
       }
     ]
   },
-  plugins: [
-    new BrowserSyncPlugin({
-      host: process.env.IP || 'localhost',
-      port: process.env.PORT || 8080,
-      server: { baseDir: ['dist'] },
-      watch: true,
-      injectCss: true
-    })
-  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
+  },
   performance: {
     hints: false
   },
