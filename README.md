@@ -27,4 +27,5 @@ npm run serve
 
 If you want to add more features like *linting*, *unit testing* or *Typescript* to
 your own project, you can do so quite easily via Vue CLI's plugin system. Check
-out the [documentation](https://cli.vuejs.org/guide/) if you want to know more.
+out the <a href="https://cli.vuejs.org/guide/" target="_blank">documentation</a>
+if you want to know more.
