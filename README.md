@@ -1,16 +1,30 @@
 # vue-phaser3
 
-## Project setup
-```
-npm install
-```
+#### Webpack boilerplate that integrates Phaser 3 into a Vue project.
 
-### Compiles and hot-reloads for development
-```
+This project template has been set up using the **Vue CLI 3** and includes:
+* *Sass*
+* *CSS postprocessing*
+* *Babel*
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with live reloading at localhost:8080
+npm run dev
+
+# build for production with transpilation / minification
+npm run build
+
+# serve your production build at localhost:5000
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Extending the project to your needs
+
+If you want to add more features like *linting*, *unit testing* or *Typescript* to
+your own project, you can do so quite easily via Vue CLI's plugin system. Check
+out the [documentation](https://cli.vuejs.org/guide/) if you want to know more.
