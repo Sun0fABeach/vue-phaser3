@@ -1,4 +1,4 @@
-# vue-phaser3_v2
+# vue-phaser3
 
 ## Project setup
 ```
