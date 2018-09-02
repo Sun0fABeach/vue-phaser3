@@ -19,5 +19,9 @@ module.exports = {
             name: `${rule.dir}/[name].[hash:8].[ext]`
           })
     })
+  },
+  devServer: {
+    open: true,
+    hot: false
   }
 }
