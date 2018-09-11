@@ -17,7 +17,7 @@ export default {
   mounted() {
     import(/* webpackChunkName: "game" */ '@/game/game').then(game => {
       this.downloaded = true
-      game.launch()
+      this.$nextTick(() => game.launch())
     })
   }
 }
