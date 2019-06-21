@@ -14,11 +14,10 @@ export default {
       downloaded: false
     }
   },
-  mounted() {
-    import(/* webpackChunkName: "game" */ '@/game/game').then(game => {
-      this.downloaded = true
-      this.$nextTick(() => game.launch())
-    })
+  async mounted() {
+    const game = await import(/* webpackChunkName: "game" */ '@/game/game')
+    this.downloaded = true
+    this.$nextTick(() => game.launch())
   }
 }
 </script>
