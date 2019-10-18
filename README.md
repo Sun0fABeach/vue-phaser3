@@ -2,7 +2,7 @@
 
 #### Webpack boilerplate that integrates Phaser 3 into a Vue project.
 
-This project template has been set up using the **Vue CLI 3** and includes:
+This project template has been set up using the **Vue CLI 4** and includes:
 * *Sass*
 * *CSS Postprocessing*
 * *Babel*
