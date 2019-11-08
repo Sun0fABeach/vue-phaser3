@@ -11,13 +11,19 @@ export default {
   name: 'Game',
   data() {
     return {
-      downloaded: false
+      downloaded: false,
+      gameInstance: null
     }
   },
   async mounted() {
     const game = await import(/* webpackChunkName: "game" */ '@/game/game')
     this.downloaded = true
-    this.$nextTick(() => game.launch())
+    this.$nextTick(() => {
+      this.gameInstance = game.launch()
+    })
+  },
+  destroyed() {
+    this.gameInstance.destroy(false);
   }
 }
 </script>
