@@ -1,5 +1,5 @@
 <template>
-  <div id="game-container" v-if="downloaded" />
+  <div :id="containerId" v-if="downloaded" />
   <div class="placeholder" v-else>
     Downloading ...
   </div>
@@ -12,14 +12,15 @@ export default {
   data() {
     return {
       downloaded: false,
-      gameInstance: null
+      gameInstance: null,
+      containerId: 'game-container'
     }
   },
   async mounted() {
     const game = await import(/* webpackChunkName: "game" */ '@/game/game')
     this.downloaded = true
     this.$nextTick(() => {
-      this.gameInstance = game.launch()
+      this.gameInstance = game.launch(this.containerId)
     })
   },
   destroyed() {
