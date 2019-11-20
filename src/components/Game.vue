@@ -24,7 +24,7 @@ export default {
     })
   },
   destroyed() {
-    this.gameInstance.destroy(false);
+    this.gameInstance.destroy(false)
   }
 }
 </script>
