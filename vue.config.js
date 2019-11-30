@@ -1,29 +1,16 @@
 module.exports = {
   chainWebpack: config => {
-    /* disable insertion of assets as data urls if they are used by Phaser */
+    /* disable insertion of assets as data urls b/c Phaser doesn't support it */
     const rules = [
-      {
-        name: 'images',
-        dir: 'img',
-        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/
-      },
-      {
-        name: 'media',
-        dir: 'media',
-        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/
-      }
+      { name: 'images', dir: 'img' },
+      { name: 'media',  dir: 'media' }
     ]
-
     rules.forEach(rule => {
-      config.module.rule(rule.name)
-        .exclude
-          .add(/src\/game\/assets/)
+      const ruleConf = config.module.rule(rule.name)
 
-      config.module.rule(`${rule.name}-phaser`)
-        .test(rule.test)
-        .include
-          .add(/src\/game\/assets/)
-          .end()
+      ruleConf.uses.clear()
+
+      ruleConf
         .use('file-loader')
           .loader('file-loader')
           .options({
