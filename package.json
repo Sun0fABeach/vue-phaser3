@@ -9,17 +9,17 @@
     "dev": "vue-cli-service serve"
   },
   "dependencies": {
-    "core-js": "^3.4.4",
+    "core-js": "^3.6.0",
     "phaser": "^3.21.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.5",
-    "@vue/cli-service": "^4.0.5",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "serve": "^11.2.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   },
   "keywords": [
     "vue",
