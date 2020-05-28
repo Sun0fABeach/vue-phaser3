@@ -4,13 +4,14 @@
   "description": "Template for working with Phaser 3 in a Vue project",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "scripts": {
-    "serve": "serve dist",
+    "start": "serve dist",
     "build": "vue-cli-service build --modern",
     "dev": "vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "phaser": "^3.23.0",
+    "serve": "^11.3.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -18,7 +19,6 @@
     "@vue/cli-service": "^4.3.1",
     "node-sass": "^4.14.0",
     "sass-loader": "^8.0.2",
-    "serve": "^11.3.0",
     "vue-template-compiler": "^2.6.11"
   },
   "keywords": [

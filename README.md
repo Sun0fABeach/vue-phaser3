@@ -21,7 +21,7 @@ npm run dev
 npm run build
 
 # serve your production build at localhost:5000
-npm run serve
+npm run start
 ```
 
 ## Extending the project to your needs
