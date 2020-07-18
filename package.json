@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "phaser": "^3.23.0",
+    "phaser": "^3.24.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.1",
-    "@vue/cli-service": "^4.4.1",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^9.0.2",
     "serve": "^11.3.2",
     "vue-template-compiler": "^2.6.11"
   },
