@@ -15,13 +15,13 @@ This project template has been set up using the **Vue CLI 4** and includes:
 npm install
 
 # serve with live reloading at localhost:8080
-npm run dev
+npm run serve
 
 # build for production with transpilation / minification
 npm run build
 
 # serve your production build at localhost:5000
-npm run serve
+npm start
 ```
 
 ## Extending the project to your needs

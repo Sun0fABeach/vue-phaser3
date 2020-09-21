@@ -4,9 +4,9 @@
   "description": "Template for working with Phaser 3 in a Vue project",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "scripts": {
-    "serve": "serve dist",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --modern",
-    "dev": "vue-cli-service serve"
+    "start": "serve dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
