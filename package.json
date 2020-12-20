@@ -9,15 +9,15 @@
     "start": "serve dist"
   },
   "dependencies": {
-    "core-js": "^3.7.0",
-    "phaser": "^3.24.1",
+    "core-js": "^3.8.1",
+    "phaser": "^3.50.0",
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.8",
-    "@vue/cli-service": "^4.5.8",
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
     "node-sass": "^5.0.0",
-    "sass-loader": "^10.0.5",
+    "sass-loader": "^10.1.0",
     "serve": "^11.3.2",
     "vue-template-compiler": "^2.6.12"
   },
