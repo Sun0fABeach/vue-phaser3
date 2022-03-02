@@ -21,7 +21,7 @@ export default {
       this.gameInstance = game.launch(this.containerId)
     })
   },
-  destroyed() {
+  unmounted() {
     this.gameInstance.destroy(false)
   }
 }
