@@ -1,24 +1,19 @@
-module.exports = {
+const { defineConfig } = require('@vue/cli-service')
+
+module.exports = defineConfig({
+  transpileDependencies: true,
+
   chainWebpack: config => {
     /* disable insertion of assets as data urls b/c Phaser doesn't support it */
-    const rules = [
-      { name: 'images', dir: 'img' },
-      { name: 'media',  dir: 'media' }
-    ]
+    const rules = ['images', 'media']
+
     rules.forEach(rule => {
-      const ruleConf = config.module.rule(rule.name)
-
-      ruleConf.uses.clear()
-
-      ruleConf
-        .use('file-loader')
-          .loader('file-loader')
-          .options({
-            name: `${rule.dir}/[name].[hash:8].[ext]`
-          })
+      const ruleConf = config.module.rule(rule)
+      ruleConf.type('asset/resource')
     })
   },
+
   devServer: {
     hot: false
   }
-}
+})

@@ -5,21 +5,20 @@
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
+    "build": "vue-cli-service build",
     "start": "http-server dist --port=5000"
   },
   "dependencies": {
-    "core-js": "^3.21.1",
+    "core-js": "^3.8.3",
     "phaser": "^3.55.2",
-    "vue": "^3.2.31"
+    "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.15",
-    "@vue/cli-service": "^4.5.15",
-    "@vue/compiler-sfc": "^3.2.31",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
     "http-server": "^14.1.0",
-    "sass": "^1.43.4",
-    "sass-loader": "^8.0.2"
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0"
   },
   "keywords": [
     "vue",
