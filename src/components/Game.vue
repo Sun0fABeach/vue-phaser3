@@ -1,28 +1,17 @@
 <script setup>
-import { ref, nextTick, onMounted, onUnmounted } from 'vue'
-
-const downloaded = ref(false)
-const containerId = 'game-container'
-let gameInstance = null
-
-onMounted(async () => {
-  const game = await import(/* webpackChunkName: "game" */ '@/game/game')
-  downloaded.value = true
-  nextTick(() => {
-    gameInstance = game.launch(containerId)
-  })
-})
-
-onUnmounted(() => {
-  gameInstance.destroy(false)
-})
+import PhaserContainer from '@/components/PhaserContainer'
 </script>
 
 <template>
-  <div :id="containerId" v-if="downloaded" />
-  <div class="placeholder" v-else>
-    Downloading ...
-  </div>
+  <Suspense>
+    <PhaserContainer />
+
+    <template #fallback>
+      <div class="placeholder">
+        Downloading ...
+      </div>
+    </template>
+  </Suspense>
 </template>
 
 <style lang="scss" scoped>
