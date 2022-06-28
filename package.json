@@ -9,16 +9,16 @@
     "start": "http-server dist --port=5000"
   },
   "dependencies": {
-    "core-js": "^3.22.5",
+    "core-js": "^3.23.3",
     "phaser": "^3.55.2",
-    "vue": "^3.2.35"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.4",
-    "@vue/cli-service": "^5.0.4",
-    "http-server": "^14.1.0",
-    "sass": "^1.52.1",
-    "sass-loader": "^13.0.0"
+    "@vue/cli-plugin-babel": "^5.0.6",
+    "@vue/cli-service": "^5.0.6",
+    "http-server": "^14.1.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   },
   "keywords": [
     "vue",
