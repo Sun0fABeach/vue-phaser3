@@ -60,8 +60,7 @@ ways you can achieve sharing state between the frameworks.
 both your Vue components and Phaser modules. Both sides can then listen to and
 emit events on that emitter.
 
-* Have both sides share a <a href="https://vuex.vuejs.org/guide/" target="_blank">
-Vuex</a> store instance. It works like an event emitter, but can also hold
-state. While the store is nicely integrated into your Vue components, on the
-Phaser side you'll have to use the raw store
-<a href="https://vuex.vuejs.org/api/#vuex-store-instance-properties" target="_blank">API</a>.
+* Have both sides share a <a href="https://pinia.vuejs.org/introduction.html" target="_blank">
+Pinia</a> store instance. It works like an event emitter, but can also hold
+state. The Pinia store is nicely integrated into your Vue components and is easily
+accessible on the Phaser side by applying the *useStore* hook.
