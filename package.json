@@ -9,15 +9,15 @@
     "start": "http-server dist --port=5000"
   },
   "dependencies": {
-    "core-js": "^3.23.3",
+    "core-js": "^3.24.1",
     "phaser": "^3.55.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.6",
-    "@vue/cli-service": "^5.0.6",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "http-server": "^14.1.1",
-    "sass": "^1.53.0",
+    "sass": "^1.54.4",
     "sass-loader": "^13.0.2"
   },
   "keywords": [
