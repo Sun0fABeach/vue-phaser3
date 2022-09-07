@@ -1,6 +1,6 @@
 {
   "name": "vue-phaser3",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Template for working with Phaser in a Vue project",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "scripts": {
